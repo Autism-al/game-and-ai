@@ -271,9 +271,9 @@ if __name__ == '__main__':
     #api2.create_question(C)
     score = api2.get_teamdetail(T+str(66))
     print(score["rank"])
-    sys.exit()
     questions = api2.get_problem(P+str(teamid))
     print(questions)
+
     for i in questions:
         if i["author"] != 66:
             uuid = i["uuid"]
@@ -334,8 +334,7 @@ if __name__ == '__main__':
                     else:
                         node = node.parent
                     count += 1
-            #url_ = "http://47.102.118.1:8089/api/answer"
             free_swap = [x,y]
-            #api.post(url_, head_uuid, operations, free_swap)
+
             result = api2.post_submit(SU, uuid, teamid, token, operations, free_swap)
             print(result)
