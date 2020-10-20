@@ -13,7 +13,9 @@
 - 安装完依赖后直接运行图片华容道中的huarongdao.py
 > python huarongdao.py
 
-- AI中的A_star.py 为AI大比拼和算法程序，直接运行即可获取排名、题目并解题
+- AI中的A_star.py 为AI大比拼包含算法程序，直接运行即可获取当前排名、未做题目并解题
 > python A_star.py
+
+- UI中存放的是原型设计的HTML文件
 
 
